@@ -1,0 +1,25 @@
+{
+    "name": "woocommerce/woocommerce-gateway-payfast",
+    "description": "Receive payments using the South African Payfast payments provider.",
+    "homepage": "https://woocommerce.com/products/payfast-payment-gateway/",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "archive": {
+        "exclude": [
+            "!/assets",
+            "!/build",
+            "!/languages",
+            "/client",
+            "/vendor"
+        ]
+    },
+    "require-dev": {
+        "woocommerce/woocommerce-sniffs": "1.0.0",
+        "sirbrillig/phpcs-changed": "^2.11.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
